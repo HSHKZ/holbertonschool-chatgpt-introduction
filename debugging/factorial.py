@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import sys
 
@@ -11,7 +11,7 @@ def factorial(n):
         result = 1
         for i in range(1, n + 1):
             result *= i
-            return result
+        return result
 
 def main():
     if len(sys.argv) != 2:
@@ -19,8 +19,8 @@ def main():
         sys.exit(1)
 
     try:
-        n = int(sys.argv [1])
-    except ValueError
+        n = int(sys.argv[1])
+    except ValueError:
         print("Error: Please provide an integer as input")
         sys.exit(1)
 
